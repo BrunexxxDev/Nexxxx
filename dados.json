@@ -203,10 +203,10 @@
     },
     {
         "id": 30,
-        "nome": "Hbo Mundi",
-        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/2560px-HBO_Mundi.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=hbomundi",
-        "status": "off"
+        "nome": "Premiere Clubes",
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/a/a2/Logo_Premiere_FC_2018.png",
+        "link": "https://reidoscanais.com/embed/?id=premiereclubes",
+        "status": "on"
     },
     {
         "id": 31,
