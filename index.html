@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXXX</title>
+    
+    <!-- Incluindo o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Pesquisar...">
+    <div id="dados-container"> <!-- Lista vazia onde os itens serão inseridos --> </div>
+    
+    <!-- Incluindo o arquivo JavaScript -->
+    <script src="functions.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chamar a função searchItems() após o carregamento da página
+            searchItems();
+        });
+    </script>
+</body>
+</html>
