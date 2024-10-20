@@ -44,7 +44,7 @@
         "id": 7,
         "nome": "Cinecanal",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/e/e6/CinecanalLA.png",
-        "link": "https://reidoscanais.org/embed/?id=cinecanal",
+        "link": "https://reidoscanais.com/embed/?id=cinecanal",
         "status": "on"
     },
     {
@@ -100,35 +100,35 @@
         "id": 15,
         "nome": "ESPN",
         "imagem": "https://logodownload.org/wp-content/uploads/2015/05/espn-logo-5.png",
-        "link": "https://reidoscanais.com/embed/?id=espn",
+        "link": "https://reidoscanais.org/embed/?id=espn",
         "status": "on"
     },
     {
         "id": 16,
         "nome": "ESPN 2",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/1200px-ESPN2_logo.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=espn2",
+        "link": "https://reidoscanais.org/embed/?id=espn2",
         "status": "on"
     },
     {
         "id": 17,
         "nome": "ESPN 3",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ESPN3_logo.svg/2560px-ESPN3_logo.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=espn3",
+        "link": "https://reidoscanais.org/embed/?id=espn3",
         "status": "on"
     },
     {
         "id": 18,
         "nome": "ESPN 4",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/2560px-ESPN_4_logo.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=espn4",
+        "link": "https://reidoscanais.org/embed/?id=espn4",
         "status": "on"
     },
     {
         "id": 19,
         "nome": "ESPN Extra",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/ESPN_Xtra_logo.svg/1200px-ESPN_Xtra_logo.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=espnextra",
+        "link": "https://reidoscanais.org/embed/?id=espnextra",
         "status": "on"
     },
     {
@@ -142,7 +142,7 @@
         "id": 21,
         "nome": "Fox Sports 2",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Fox_sports_2_logo.svg/1024px-Fox_sports_2_logo.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=foxsports2",
+        "link": "https://reidoscanais.org/embed/?id=foxsports2",
         "status": "on"
     },
     {
@@ -156,8 +156,8 @@
         "id": 23,
         "nome": "Gazeta",
         "imagem": "https://seeklogo.com/images/G/gazeta-logo-5F1A8CD351-seeklogo.com.png",
-        "link": "https://reidoscanais.com/embed/?id=globonews",
-        "status": "on"
+        "link": "https://reidoscanais.com/embed/?id=gazeta",
+        "status": "off"
     },
     {
         "id": 24,
@@ -206,7 +206,7 @@
         "nome": "Hbo Mundi",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/2560px-HBO_Mundi.svg.png",
         "link": "https://reidoscanais.com/embed/?id=hbomundi",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 31,
@@ -220,7 +220,7 @@
         "nome": "Hbo Pop",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/2560px-HBO_Pop.svg.png",
         "link": "https://reidoscanais.com/embed/?id=hbopop",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 33,
@@ -248,7 +248,7 @@
         "nome": "HGTV",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HGTV_US_Logo_2015.svg/1200px-HGTV_US_Logo_2015.svg.png",
         "link": "https://reidoscanais.com/embed/?id=hgtv",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 37,
@@ -266,9 +266,9 @@
     },
     {
         "id": 39,
-        "nome": "Investigação Discovery",
-        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Investigation_Discovery_Logo_2018.svg/1845px-Investigation_Discovery_Logo_2018.svg.png",
-        "link": "https://reidoscanais.com/embed/?id=investigacaodiscovery",
+        "nome": "Discovery Science",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_2017_Logo.svg/1200px-Discovery_Science_2017_Logo.svg.png",
+        "link": "https://reidoscanais.com/embed/?id=discoveryscience",
         "status": "on"
     },
     {
@@ -308,9 +308,9 @@
     },
     {
         "id": 45,
-        "nome": "Paramount+",
-        "imagem": "https://logodownload.org/wp-content/uploads/2021/03/paramount-plus-logo-0.png",
-        "link": "https://reidoscanais.com/embed/?id=paramountplus",
+        "nome": "Paramount Network",
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/512px-Paramount_Network.svg.png",
+        "link": "https://reidoscanais.com/embed/?id=paramountnetwork",
         "status": "on"
     },
     {
@@ -360,7 +360,7 @@
         "nome": "Space",
         "imagem": "https://seeklogo.com/images/S/space-channel-logo-4AD3528E2F-seeklogo.com.png",
         "link": "https://reidoscanais.com/embed/?id=space",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 53,
@@ -380,7 +380,7 @@
         "id": 55,
         "nome": "Star Chennel",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/65/Star_Channel_2021.png",
-        "link": "https://reidoscanais.com/embed/?id=starchennel",
+        "link": "https://reidoscanais.com/embed/?id=starchannel",
         "status": "on"
     },
     {
@@ -395,7 +395,7 @@
         "nome": "SYFY",
         "imagem": "https://seeklogo.com/images/S/syfy-logo-243F5B37C0-seeklogo.com.png",
         "link": "https://reidoscanais.com/embed/?id=syfy",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 58,
@@ -451,21 +451,21 @@
         "nome": "TNT",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/1024px-TNT_Logo_2016.svg.png",
         "link": "https://reidoscanais.com/embed/?id=tnt",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 66,
         "nome": "TNT Series",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/8/86/TNT_Series.png",
         "link": "https://reidoscanais.com/embed/?id=tntseries",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 67,
         "nome": "Tooncast",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tooncast_logo.svg/1280px-Tooncast_logo.svg.png",
         "link": "https://reidoscanais.com/embed/?id=tooncast",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 68,
@@ -478,14 +478,14 @@
         "id": 69,
         "nome": "Tv Cultura",
         "imagem": "https://seeklogo.com/images/T/tv-cultura-logo-3D0057A0C9-seeklogo.com.png",
-        "link": "https://reidoscanais.org/embed/?id=tvcultura",
+        "link": "https://reidoscanais.com/embed/?id=tvcultura",
         "status": "on"
     },
     {
         "id": 70,
-        "nome": "A Grande Conquista",
-        "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/4b/A_Grande_Conquista_2.jpg/640px-A_Grande_Conquista_2.jpg",
-        "link": "https://reidoscanais.org/embed/?id=agrandeconquista",
+        "nome": "A Fazenda 16",
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/a/a3/A_Fazenda_16.png",
+        "link": "https://reidoscanais.com/embed/?id=afazenda16",
         "status": "on"
     },
     {
@@ -506,14 +506,14 @@
         "id": 73,
         "nome": "JP News",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/512px-Jovem_Pan_logo_2018.svg.png",
-        "link": "https://reidoscanais.org/embed/?id=jpnews",
+        "link": "https://reidoscanais.com/embed/?id=jpnews",
         "status": "on"
     },
     {
         "id": 74,
         "nome": "Record News",
         "imagem": "https://i.imgur.com/HZDRG0K.png",
-        "link": "https://reidoscanais.org/embed/?id=recordnews",
+        "link": "https://reidoscanais.com/embed/?id=recordnews",
         "status": "on"
     },
     {
@@ -521,21 +521,21 @@
         "nome": "Max",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Max_logo.svg",
         "link": "https://reidoscanais.com/embed/?id=max",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 76,
         "nome": "Max 2",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Max_logo.svg",
-        "link": "https://reidoscanais.org/embed/?id=max2",
-        "status": "on"
+        "link": "https://reidoscanais.com/embed/?id=max2",
+        "status": "off"
     },
     {
         "id": 77,
         "nome": "Max 3",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Max_logo.svg",
         "link": "https://reidoscanais.com/embed/?id=max3",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 78,
@@ -555,56 +555,56 @@
         "id": 80,
         "nome": "Premiere Clubes",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiereclubes",
+        "link": "https://reidoscanais.com/embed/?id=premiereclubes",
         "status": "on"
     },
     {
         "id": 81,
         "nome": "Premiere 2",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere2",
+        "link": "https://reidoscanais.com/embed/?id=premiere2",
         "status": "on"
     },
     {
         "id": 82,
         "nome": "Premiere 3",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere3",
+        "link": "https://reidoscanais.com/embed/?id=premiere3",
         "status": "on"
     },
     {
         "id": 83,
         "nome": "Premiere 4",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere4",
+        "link": "https://reidoscanais.com/embed/?id=premiere4",
         "status": "on"
     },
     {
         "id": 84,
         "nome": "Premiere 5",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere5",
+        "link": "https://reidoscanais.com/embed/?id=premiere5",
         "status": "on"
     },
     {
         "id": 85,
         "nome": "Premiere 6",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere6",
+        "link": "https://reidoscanais.com/embed/?id=premiere6",
         "status": "on"
     },
     {
         "id": 86,
         "nome": "Premiere 7",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere7",
+        "link": "https://reidoscanais.com/embed/?id=premiere7",
         "status": "on"
     },
     {
         "id": 87,
         "nome": "Premiere 8",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Logo_Premiere_FC_2018.png/1200px-Logo_Premiere_FC_2018.png",
-        "link": "https://reidoscanais.org/embed/?id=premiere8",
+        "link": "https://reidoscanais.com/embed/?id=premiere8",
         "status": "on"
     },
     {
@@ -612,89 +612,89 @@
         "nome": "Paramount+ 2",
         "imagem": "https://logodownload.org/wp-content/uploads/2021/03/paramount-plus-logo-0.png",
         "link": "https://reidoscanais.com/embed/?id=paramountplus2",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 89,
         "nome": "Paramount+ 3",
         "imagem": "https://logodownload.org/wp-content/uploads/2021/03/paramount-plus-logo-0.png",
         "link": "https://reidoscanais.com/embed/?id=paramountplus3",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 90,
         "nome": "Paramount+ 4",
         "imagem": "https://logodownload.org/wp-content/uploads/2021/03/paramount-plus-logo-0.png",
         "link": "https://reidoscanais.com/embed/?id=paramountplus4",
-        "status": "on"
+        "status": "off"
     },
     {
         "id": 91,
         "nome": "UFC Fight Pass",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/UFC_Fight_Pass_Logo.svg/2560px-UFC_Fight_Pass_Logo.svg.png",
-        "link": "https://reidoscanais.org/embed/?id=ufcfightpass",
+        "link": "https://reidoscanais.com/embed/?id=ufcfightpass",
         "status": "on"
     },
     {
         "id": 92,
         "nome": "UFC Fight Pass 2",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/UFC_Fight_Pass_Logo.svg/2560px-UFC_Fight_Pass_Logo.svg.png",
-        "link": "https://reidoscanais.org/embed/?id=ufcfightpass2",
-        "status": "on"
+        "link": "https://reidoscanais.com/embed/?id=ufcfightpass2",
+        "status": "off"
     },
     {
         "id": 93,
         "nome": "UFC Fight Pass 3",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/UFC_Fight_Pass_Logo.svg/2560px-UFC_Fight_Pass_Logo.svg.png",
-        "link": "https://reidoscanais.org/embed/?id=ufcfightpass3",
-        "status": "on"
+        "link": "https://reidoscanais.com/embed/?id=ufcfightpass3",
+        "status": "off"
     },
     {
         "id": 94,
         "nome": "UFC Fight Pass 4",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/UFC_Fight_Pass_Logo.svg/2560px-UFC_Fight_Pass_Logo.svg.png",
-        "link": "https://reidoscanais.org/embed/?id=ufcfightpass4",
-        "status": "on"
+        "link": "https://reidoscanais.com/embed/?id=ufcfightpass4",
+        "status": "off"
     },
     {
         "id": 95,
         "nome": "Nosso Futebol",
         "imagem": "https://i.pinimg.com/originals/fe/1a/e9/fe1ae9abc45d5d2c7f6cf83e0c76ac7b.webp",
-        "link": "https://reidoscanais.org/embed/?id=nossofutebol",
+        "link": "https://reidoscanais.com/embed/?id=nossofutebol",
         "status": "on"
     },
     {
         "id": 96,
         "nome": "TNT Sports",
         "imagem": "https://i.imgur.com/XA3zxEE.png",
-        "link": "https://reidoscanais.org/embed/?id=tntsports",
-        "status": "on"
+        "link": "https://reidoscanais.com/embed/?id=tntsports",
+        "status": "off"
     },
     {
         "id": 97,
         "nome": "Discovery World",
         "imagem": "https://i.imgur.com/Yb3oUls.png",
-        "link": "https://reidoscanais.org/embed/?id=discoveryworld",
+        "link": "https://reidoscanais.com/embed/?id=discoveryworld",
         "status": "on"
     },
     {
         "id": 98,
         "nome": "Discovery Turbo",
         "imagem": "https://i.imgur.com/WuOhLl4.png",
-        "link": "https://reidoscanais.org/embed/?id=discoveryturbo",
+        "link": "https://reidoscanais.com/embed/?id=discoveryturbo",
         "status": "on"
     },
     {
         "id": 99,
         "nome": "Discovery ID",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/langfr-512px-InvestigationDiscoveryLogo2020.svg.png",
-        "link": "https://reidoscanais.org/embed/?id=discoveryid",
+        "link": "https://reidoscanais.com/embed/?id=discoveryid",
         "status": "on"
     },
     {
         "id": 100,
         "nome": "Discovery H&H",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/500px-Discovery_H%26H_Logo_2022.webp.png",
-        "link": "https://reidoscanais.org/embed/?id=discoveryheh",
+        "link": "https://reidoscanais.com/embed/?id=discoveryheh",
         "status": "on"
     }]
