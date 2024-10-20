@@ -24,8 +24,9 @@ div.item {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza a imagem verticalmente */
+    justify-content: center;
     border-radius: 10px;
+    
 }
 
 /* Estilos para as imagens */
@@ -34,7 +35,7 @@ div.item img {
     margin: auto;
     width: 100%;
     max-height: 75%;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 /* Estilos para o nome do item */
@@ -52,6 +53,8 @@ p.nome {
 /* Estilos para a barra de pesquisa */
 #searchInput {
     font-weight: bold;
+    color: white;
+    background-color: #1F1F1F;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
