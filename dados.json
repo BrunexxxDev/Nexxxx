@@ -31,7 +31,7 @@
         "nome": "Cartoon Network",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/800px-Cartoon_Network_2010_logo.svg.png?20230324164919",
         "link": "https://reidoscanais.com/embed/?id=cartoonnetwork",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 6,
@@ -129,7 +129,7 @@
         "nome": "ESPN Extra",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/ESPN_Xtra_logo.svg/1200px-ESPN_Xtra_logo.svg.png",
         "link": "https://reidoscanais.com/embed/?id=espnextra",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 20,
@@ -269,7 +269,7 @@
         "nome": "Investigação Discovery",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Investigation_Discovery_Logo_2018.svg/1845px-Investigation_Discovery_Logo_2018.svg.png",
         "link": "https://reidoscanais.com/embed/?id=investigacaodiscovery",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 40,
@@ -381,7 +381,7 @@
         "nome": "Star Chennel",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/65/Star_Channel_2021.png",
         "link": "https://reidoscanais.com/embed/?id=starchennel",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 56,
@@ -395,7 +395,7 @@
         "nome": "SYFY",
         "imagem": "https://seeklogo.com/images/S/syfy-logo-243F5B37C0-seeklogo.com.png",
         "link": "https://reidoscanais.com/embed/?id=syfy",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 58,
@@ -458,14 +458,14 @@
         "nome": "TNT Series",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/8/86/TNT_Series.png",
         "link": "https://reidoscanais.com/embed/?id=tntseries",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 67,
         "nome": "Tooncast",
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tooncast_logo.svg/1280px-Tooncast_logo.svg.png",
         "link": "https://reidoscanais.com/embed/?id=tooncast",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 68,
@@ -486,7 +486,7 @@
         "nome": "A Grande Conquista",
         "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/4b/A_Grande_Conquista_2.jpg/640px-A_Grande_Conquista_2.jpg",
         "link": "https://reidoscanais.org/embed/?id=agrandeconquista",
-        "status": "off"
+        "status": "on"
     },
     {
         "id": 71,
