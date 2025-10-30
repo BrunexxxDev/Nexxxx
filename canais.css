@@ -115,3 +115,13 @@ p.nome {
     border-radius: 10px;
     overflow: hidden;
 }
+button.close {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

@@ -97,3 +97,18 @@ document.addEventListener('DOMContentLoaded', function() {
     searchItems(); 
 });
                                              
+function closePlayer() { 
+    const playerContainer = document.getElementById('player-container');
+    const initialMessage = playerContainer.querySelector('p'); 
+    
+    // Remove o iframe e reinserir a mensagem inicial
+    playerContainer.innerHTML = '';
+    if (initialMessage) {
+        playerContainer.appendChild(initialMessage);
+    }
+    
+    // Remove a classe de expansão
+    playerContainer.classList.remove('player-expanded');
+
+
+}
