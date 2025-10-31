@@ -1,9 +1,9 @@
 /* Estilos gerais */
 body {
     text-align: center;
-    background-color: grey;
+    background-color: #121212;
     /* Espaço para o header fixo expandido (520px) */
-    padding-top: 520px; 
+    padding-top: 125px; 
 }
 
 /* CONTAINER FIXO NO TOPO */
@@ -13,10 +13,21 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: grey; 
+
+    /* Efeito de vidro/blur */
+    background-color: rgba(25, 25, 25, 0.5); /* Cor de fundo com transparência */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 10px;
     box-sizing: border-box;
+
+    /* Novo: Alinhamento com Flexbox */
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Espaço entre os itens */
+    gap: 15px; /* Espaçamento entre os elementos */
 }
 
 /* Estilos para a barra de pesquisa */
@@ -24,9 +35,13 @@ body {
     font-weight: bold;
     color: white;
     background-color: #1F1F1F;
-    width: 98%; 
+    /* Novo: Largura flexível e máxima */
+    flex-grow: 1; /* Permite que a barra cresça para ocupar o espaço disponível */
+    max-width: 400px; /* Limita a largura máxima */
+
     padding: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 0; /* Remove a margem inferior, já que agora está em linha */
+    margin-left: 40px;
     box-sizing: border-box;
     border-radius: 50px;
 }
@@ -35,8 +50,9 @@ body {
 #player-container {
     width: 98%;
     max-width: 800px;
-    height: 30px; /* Altura inicial mínima */
-    margin: 0 auto 10px auto; 
+    height: 40px; /* Altura inicial ajustada para o novo layout */
+    /* Novo: Margem removida para o Flexbox controlar */
+    margin: 0; 
     background-color: #1F1F1F;
     border-radius: 10px;
     
@@ -45,9 +61,20 @@ body {
     align-items: center;
     
     overflow: hidden; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: height 0.5s ease-in-out;
     position: relative; 
+
+    /* Novo: Ordem e crescimento no layout flex */
+    order: 2; /* Coloca o player depois da busca */
+    flex-grow: 2; /* Faz o player ocupar mais espaço que a busca */
+}
+
+/* Novo: Estilo para o botão de fechar */
+#close {
+    order: 3; /* Coloca o botão por último */
+    height: 40px;
+    width: 40px;
 }
 
 #player-container p {
@@ -68,7 +95,7 @@ body {
 
 /* CLASSE DE EXPANSÃO */
 .player-expanded {
-    height: 450px !important; 
+    height: 50vh !important; /* Usa a altura da viewport para ser mais responsivo */
     /* Removemos as regras de display/opacity do iframe e da mensagem, 
        pois o JS irá gerenciar a substituição de conteúdo. */
 }
