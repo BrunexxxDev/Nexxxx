@@ -2,13 +2,12 @@
 body {
     text-align: center;
     background-color: #121212;
-    /* --- NOVO: Espaço para o header fixo --- */
     padding-top: 90px; /* Empurra todo o conteúdo para baixo do header */
 }
 
 /* CONTAINER FIXO NO TOPO */
 #header-fixed {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,200 +29,194 @@ body {
     gap: 15px; /* Espaçamento entre os elementos */
 }
 
-/* --- NOVO: Estilo para a Logo --- */
+/* --- NOVO: Estilo para a Logo Principal (Brunexxx Developer) --- */
 #site-logo {
-    height: 50px; /* Mantém o espaço que a logo ocupa no layout */
-    order: -1; /* Garante que a logo seja o primeiro item */
-    margin-left: 30px; /* Aumenta a margem para afastar do canto */
-    cursor: pointer; /* Sugere que é clicável (ex: para voltar à home) */
-    /* --- NOVO: Efeito para destacar a logo --- */
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)); 
-    /* --- NOVO: "Zoom" na imagem para compensar o espaço transparente --- */
-    transform: scale(2.0); /* Amplia a imagem em 50% */
+    height: 50px;
+    order: -1;
+    margin-left: 20px;
+    transform: scale(1.5); /* Aumenta a visibilidade da logo no header fixo */
 }
 
-/* Estilos para a barra de pesquisa */
+/* CAMPO DE BUSCA */
 #searchInput {
-    font-weight: bold;
-    color: white;
-    background-color: #1F1F1F;
-    /* Novo: Largura flexível e máxima */
-    flex-grow: 2; /* Aumenta a prioridade de crescimento da busca */
-    /* max-width: 400px; -> Removido para permitir que a busca se expanda */
-
     padding: 10px;
-    margin-bottom: 0; /* Remove a margem inferior, já que agora está em linha */
-    box-sizing: border-box;
-    border-radius: 50px;
-}
-
-/* ESTILOS DO PLAYER COM ANIMAÇÃO */
-#player-container {
-    width: 98%;
-    max-width: 800px;
-    height: 40px; /* Altura inicial ajustada para o novo layout */
-    /* Novo: Margem removida para o Flexbox controlar */
-    margin: 0; 
-    background-color: #1F1F1F;
-    border-radius: 10px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    overflow: hidden; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: height 0.5s ease-in-out;
-    position: relative; 
-
-    /* Novo: Ordem e crescimento no layout flex */
-    order: 2; /* Coloca o player depois da busca */
-    flex-grow: 1; /* Diminui a prioridade de crescimento do player */
-}
-
-/* Novo: Estilo para o botão de fechar */
-#close {
-    order: 3; /* Coloca o botão por último */
-    height: 40px;
-    margin-left: auto; /* Empurra o botão para a direita */
-    width: 40px;
-    /* --- Melhorias no Design --- */
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente acinzentado */
-    color: white; /* Cor do 'X' */
-    border: none; /* Remove a borda padrão */
-    border-radius: 50%; /* Deixa o botão redondo */
-    cursor: pointer; /* Mostra a "mãozinha" ao passar o mouse */
-    font-size: 18px; /* Tamanho do 'X' */
-    font-weight: bold; /* Deixa o 'X' em negrito */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave */
-}
-
-/* Efeito ao passar o mouse */
-#close:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Clareia um pouco o fundo */
-    transform: scale(1.1); /* Aumenta levemente o tamanho */
-}
-
-#player-container p {
+    height: 45px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #333;
     color: white;
-    margin: 0;
-    padding: 5px 0;
-    width: 100%; 
-    text-align: center;
+    flex-grow: 1; /* Permite que o campo de busca cresça */
+    max-width: 550px;
 }
 
-/* Iframe: Depende da altura do pai */
-#player-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    /* O iframe aparecerá porque o texto inicial será substituído/removido no JS */
+#searchInput::placeholder {
+    color: #bbb;
 }
 
-/* CLASSE DE EXPANSÃO */
-.player-expanded {
-    height: 50vh !important; /* Usa a altura da viewport para ser mais responsivo */
-    /* Removemos as regras de display/opacity do iframe e da mensagem, 
-       pois o JS irá gerenciar a substituição de conteúdo. */
-}
-
-/* --- NOVO: Estilo para a Logo Secundária --- */
+/* LOGO SECUNDÁRIA (Nexxx Studio) */
 #secondary-logo {
-    display: block; /* Para permitir margens automáticas */
-    max-width: 800px; /* Aumenta a largura máxima para a logo ficar maior */
-    width: 70%; /* Adicionado para melhor responsividade */
-    height: 120px; /* Define uma altura fixa para o contêiner da imagem */
-    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço vertical */
+    display: block;
+    max-width: 70%;
+    width: 800px; /* Mantido para referência, mas % prevalece */
+    height: 120px;
+    margin: 20px auto;
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
-    object-fit: cover; /* Preenche o espaço, mantendo a proporção e cortando o excesso (vertical) */
+    object-fit: cover;
 }
 
 
-/* Estilos para o contêiner dos itens */
+/* CONTAINER PRINCIPAL DOS DADOS */
 #dados-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
-    margin: 20px auto; 
+    gap: 15px;
+    padding: 20px;
 }
 
-/* Estilos para os itens individuais */
-div.item {
-    margin: 10px;
-    background-color: #303030;
+/* ITENS (CANAIS) */
+.item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
     padding: 10px;
-    width: 175px;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+
+.item .nome {
     border-radius: 10px;
-    cursor: pointer; 
-}
-
-div.item img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-height: 75%;
-    border-radius: 7px;
-}
-
-p.nome {
+    padding: 4px;
+    background-color: black;
     color: white;
-    font-size: 17px;
-    background-color: #1F1F1F;
-    height: 17px;
-    border-radius: 10px;
+    font-size: 0.9em;
+    margin: 0;
+    text-align: center;
     overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
-button.close {
-    margin-top: 10px;
-    padding: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+
+/* CONTAINER DO PLAYER (VÍDEO) */
+#player-container {
+    width: 350px;
+    height: 50px;
+    background-color: #333;
     border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* PLAYER EXPANDIDO */
+#player-container.player-expanded {
+    width: 600px;
+    height: 350px;
+}
+
+/* NOVO: Estilo para o IFRAME dentro do player */
+#player-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* NOVO: BOTÃO DE FECHAR (X) */
+#close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 1.2em;
     font-weight: bold;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* MOSTRA O BOTÃO "X" APENAS QUANDO O PLAYER ESTÁ EXPANDIDO */
+#player-container.player-expanded + #close {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#close:hover {
+    background-color: red;
+    transform: scale(1.1);
 }
 
 /* --- ESTILOS PARA DISPOSITIVOS MÓVEIS --- */
 @media (max-width: 768px) {
-    /* Mantém o header como linha, mas permite que os itens quebrem para a linha de baixo */
+
+    body {
+        padding-top: 150px;
+    }
+
     #header-fixed {
-        flex-wrap: wrap; /* Permite que o player vá para a próxima linha */
-        justify-content: flex-start; /* Alinha todos à esquerda para melhor controle */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: flex-start;
     }
 
-    /* Ajusta a logo */
+
     #site-logo {
-        order: 1; /* Logo primeiro */
-        margin-left: 15px; /* Margem esquerda padrão */
-        transform: scale(1.5);
-        flex-shrink: 0; /* Impede que a logo encolha */
+        order: 1;
+        margin-right: 0;
+        transform: scale(1); /* Reverte a escala maior do desktop */
+        height: 40px;
     }
 
-    /* A busca deve crescer para ocupar o espaço */
     #searchInput {
-        order: 2; /* Busca no meio */
-        flex-grow: 1; /* Faz a busca ocupar o espaço disponível */
+        order: 2;
+        flex-basis: 70%;
+        margin-left: auto;
     }
-
-    /* O player deve ocupar 100% da largura para quebrar a linha */
     #player-container {
-        order: 4; /* Player fica por último, na linha de baixo */
-        flex-basis: 100%; /* Ocupa 100% da largura, forçando a quebra de linha */
-        margin-top: 10px; /* Espaço entre a busca e o player */
+        order: 4;
+        flex-basis: 100%;
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+    }
+    #player-container.player-expanded {
+        width: 100%;
+        height: 200px;
     }
 
-    /* Ajusta o botão de fechar */
     #close {
-        order: 3; /* Botão de fechar depois da busca */
-        margin-left: auto; /* Empurra o botão para a direita, ocupando o espaço restante */
-        flex-shrink: 0; /* Impede que o botão encolha */
+        top: 10px;
+        right: 10px;
     }
 }
