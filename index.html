@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canais</title>
+    <meta name="description" content="Plataforma de transmissão de canais ao vivo, desenvolvida por Brunexxx Developer para Nexxx Studio.">
+    <title>Canais - Nexxx Studio</title>
     <link rel="stylesheet" href="canais.css">
 </head>
 <body>
-    
-    <div id="header-fixed">
-        <!-- LOGO DO SITE -->
-        <img src="imagens/NX.png" alt="NX" id="site-logo">
 
-        <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Pesquisar...">
-        
+    <div id="header-fixed">
+        <img src="imagens/NX.png" alt="Logo Brunexxx Developer" id="site-logo">
+
+        <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Pesquisar canais...">
+
         <div id="player-container">
-            <p style="color: white; margin: 0; padding: 5px 0;">Clique em um canal para assistir.</p>
+            <p style="color: white; margin: 0; padding: 5px 0;">
+                Clique em um canal para assistir.
+            </p>
         </div>
+
         <button id="close" onclick="closePlayer()">X</button>
     </div>
-    
-    <!-- NOVA LOGO ABAIXO DO HEADER -->
-    <img src="imagens/Nexxx.png" alt="Logo Secundária" id="secondary-logo">
 
-    <div id="dados-container"> </div>
-    
+    <img src="imagens/Nexxx.png" alt="Logo Nexxx Studio" id="secondary-logo">
+
+    <div id="dados-container">
+    </div>
+
     <script src="canais.js"></script>
 </body>
 </html>
-
