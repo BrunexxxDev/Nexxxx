@@ -2,8 +2,8 @@
 body {
     text-align: center;
     background-color: #121212;
-    /* Espaço para o header fixo expandido (520px) */
-    padding-top: 125px; 
+    /* --- NOVO: Espaço para o header fixo --- */
+    padding-top: 90px; /* Empurra todo o conteúdo para baixo do header */
 }
 
 /* CONTAINER FIXO NO TOPO */
@@ -26,8 +26,20 @@ body {
     /* Novo: Alinhamento com Flexbox */
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
-    justify-content: space-between; /* Espaço entre os itens */
+    justify-content: flex-start; /* Alinha itens à esquerda */
     gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* --- NOVO: Estilo para a Logo --- */
+#site-logo {
+    height: 50px; /* Mantém o espaço que a logo ocupa no layout */
+    order: -1; /* Garante que a logo seja o primeiro item */
+    margin-left: 30px; /* Aumenta a margem para afastar do canto */
+    cursor: pointer; /* Sugere que é clicável (ex: para voltar à home) */
+    /* --- NOVO: Efeito para destacar a logo --- */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)); 
+    /* --- NOVO: "Zoom" na imagem para compensar o espaço transparente --- */
+    transform: scale(2.0); /* Amplia a imagem em 50% */
 }
 
 /* Estilos para a barra de pesquisa */
@@ -36,12 +48,11 @@ body {
     color: white;
     background-color: #1F1F1F;
     /* Novo: Largura flexível e máxima */
-    flex-grow: 1; /* Permite que a barra cresça para ocupar o espaço disponível */
-    max-width: 400px; /* Limita a largura máxima */
+    flex-grow: 2; /* Aumenta a prioridade de crescimento da busca */
+    /* max-width: 400px; -> Removido para permitir que a busca se expanda */
 
     padding: 10px;
     margin-bottom: 0; /* Remove a margem inferior, já que agora está em linha */
-    margin-left: 40px;
     box-sizing: border-box;
     border-radius: 50px;
 }
@@ -67,14 +78,30 @@ body {
 
     /* Novo: Ordem e crescimento no layout flex */
     order: 2; /* Coloca o player depois da busca */
-    flex-grow: 2; /* Faz o player ocupar mais espaço que a busca */
+    flex-grow: 1; /* Diminui a prioridade de crescimento do player */
 }
 
 /* Novo: Estilo para o botão de fechar */
 #close {
     order: 3; /* Coloca o botão por último */
     height: 40px;
+    margin-left: auto; /* Empurra o botão para a direita */
     width: 40px;
+    /* --- Melhorias no Design --- */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente acinzentado */
+    color: white; /* Cor do 'X' */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Deixa o botão redondo */
+    cursor: pointer; /* Mostra a "mãozinha" ao passar o mouse */
+    font-size: 18px; /* Tamanho do 'X' */
+    font-weight: bold; /* Deixa o 'X' em negrito */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+#close:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Clareia um pouco o fundo */
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
 }
 
 #player-container p {
@@ -98,6 +125,17 @@ body {
     height: 50vh !important; /* Usa a altura da viewport para ser mais responsivo */
     /* Removemos as regras de display/opacity do iframe e da mensagem, 
        pois o JS irá gerenciar a substituição de conteúdo. */
+}
+
+/* --- NOVO: Estilo para a Logo Secundária --- */
+#secondary-logo {
+    display: block; /* Para permitir margens automáticas */
+    max-width: 800px; /* Aumenta a largura máxima para a logo ficar maior */
+    width: 70%; /* Adicionado para melhor responsividade */
+    height: 120px; /* Define uma altura fixa para o contêiner da imagem */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço vertical */
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    object-fit: cover; /* Preenche o espaço, mantendo a proporção e cortando o excesso (vertical) */
 }
 
 
@@ -151,4 +189,41 @@ button.close {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* --- ESTILOS PARA DISPOSITIVOS MÓVEIS --- */
+@media (max-width: 768px) {
+    /* Mantém o header como linha, mas permite que os itens quebrem para a linha de baixo */
+    #header-fixed {
+        flex-wrap: wrap; /* Permite que o player vá para a próxima linha */
+        justify-content: flex-start; /* Alinha todos à esquerda para melhor controle */
+    }
+
+    /* Ajusta a logo */
+    #site-logo {
+        order: 1; /* Logo primeiro */
+        margin-left: 15px; /* Margem esquerda padrão */
+        transform: scale(1.5);
+        flex-shrink: 0; /* Impede que a logo encolha */
+    }
+
+    /* A busca deve crescer para ocupar o espaço */
+    #searchInput {
+        order: 2; /* Busca no meio */
+        flex-grow: 1; /* Faz a busca ocupar o espaço disponível */
+    }
+
+    /* O player deve ocupar 100% da largura para quebrar a linha */
+    #player-container {
+        order: 4; /* Player fica por último, na linha de baixo */
+        flex-basis: 100%; /* Ocupa 100% da largura, forçando a quebra de linha */
+        margin-top: 10px; /* Espaço entre a busca e o player */
+    }
+
+    /* Ajusta o botão de fechar */
+    #close {
+        order: 3; /* Botão de fechar depois da busca */
+        margin-left: auto; /* Empurra o botão para a direita, ocupando o espaço restante */
+        flex-shrink: 0; /* Impede que o botão encolha */
+    }
 }
