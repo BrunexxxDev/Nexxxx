@@ -40,7 +40,7 @@ body {
 /* CAMPO DE BUSCA */
 #searchInput {
     padding: 10px;
-    height: 45px;
+    height: 40px;
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid #333;
@@ -194,7 +194,7 @@ body {
     #site-logo {
         order: 1;
         margin-right: 0;
-        transform: scale(1); /* Reverte a escala maior do desktop */
+        transform: scale(2.3); /* Reverte a escala maior do desktop */
         height: 40px;
     }
 
