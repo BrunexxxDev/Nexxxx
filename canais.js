@@ -99,16 +99,13 @@ document.addEventListener('DOMContentLoaded', function() {
                                              
 function closePlayer() { 
     const playerContainer = document.getElementById('player-container');
-    const initialMessage = playerContainer.querySelector('p'); 
+    // O texto original que deve ser restaurado.
+    const initialMessageHTML = '<p style="color: white; margin: 0; padding: 5px 0;">Clique em um canal para assistir.</p>';
     
-    // Remove o iframe e reinserir a mensagem inicial
+    // Limpa o player (remove o iframe) e insere a mensagem inicial novamente.
     playerContainer.innerHTML = '';
-    if (initialMessage) {
-        playerContainer.appendChild(initialMessage);
-    }
+    playerContainer.innerHTML = initialMessageHTML;
     
     // Remove a classe de expansão
     playerContainer.classList.remove('player-expanded');
-
-
 }
