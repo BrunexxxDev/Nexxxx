@@ -1,33 +1,74 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma de transmissão de canais ao vivo, desenvolvida por Brunexxx Developer para Nexxx Studio.">
-    <title>Canais - Nexxx Studio</title>
-    <link rel="stylesheet" href="canais.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nexxx Studio — Canais</title>
+  <meta name="description" content="Plataforma de canais — Nexxx Studio. Apps, sites e identidade futurista." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div id="header-fixed">
-        <img src="imagens/NX.png" alt="Logo Brunexxx Developer" id="site-logo">
-
-        <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Pesquisar canais...">
-
-        <div id="player-container">
-            <p style="color: white; margin: 0; padding: 5px 0;">
-                Clique em um canal para assistir.
-            </p>
-        </div>
-
-        <button id="close" onclick="closePlayer()">X</button>
+  <header id="header-fixed" class="topbar">
+    <div class="brand">
+      <img src="imagens/NX.png" alt="Nexxx Studio - logo" id="site-logo">
+      <div class="brand-text">
+        <div class="brand-name">Nexxx Studio</div>
+        <div class="brand-sub">Tecnologia que impulsiona o amanhã</div>
+      </div>
     </div>
 
-    <img src="imagens/Nexxx.png" alt="Logo Nexxx Studio" id="secondary-logo">
-
-    <div id="dados-container">
+    <div class="search-wrap">
+      <input id="searchInput" aria-label="Pesquisar canais" placeholder="Pesquisar canais..." />
     </div>
 
-    <script src="canais.js"></script>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Sobre</a>
+      <a href="#" class="nav-link">Serviços</a>
+      <a href="#" class="nav-link">Portfólio</a>
+      <a href="#" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Experiências digitais <span class="accent">futuristas</span> e premium</h1>
+        <p>Plataforma de canais — protótipos, demos e projetos próprios da Nexxx Studio. Clique em qualquer canal para abrir o player.</p>
+      </div>
+      <div class="hero-image">
+        <img src="imagens/Nexxx.png" alt="Marca Nexxx Studio" id="secondary-logo">
+      </div>
+    </section>
+
+    <section class="controls container">
+      <div class="status" id="status">Carregando canais...</div>
+    </section>
+
+    <section class="container">
+      <div id="dados-container" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- MODAL PLAYER -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Player">
+    <div class="modal-overlay" id="modalOverlay" tabindex="-1"></div>
+    <div class="modal-panel" role="document" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Fechar player">&times;</button>
+      <div id="playerWrapper" class="player-wrapper">
+        <!-- iframe injected aqui -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Nexxx Studio</div>
+    <div class="socials">Twitter • LinkedIn • Behance</div>
+  </footer>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
