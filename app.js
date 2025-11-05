@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const playerWrapper = document.getElementById('playerWrapper');
 
   // utils
+  /**
+   * Sets the status message in the designated status element.
+   * @param {string} html - The HTML string to be set as the status.
+   */
   function setStatus(html) { statusEl.innerHTML = html; }
+
+  /**
+   * Opens the modal and loads an iframe with the given URL.
+   * @param {string} url - The URL to be loaded in the iframe.
+   */
   function openModalWithUrl(url) {
     // create iframe safely
     playerWrapper.innerHTML = '';
@@ -27,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // trap focus (simple)
     modalClose.focus();
   }
+
+  /**
+   * Closes the modal and removes the iframe to stop playback.
+   */
   function closeModal() {
     modal.classList.remove('open');
     modal.setAttribute('aria-hidden', 'true');
@@ -34,7 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     playerWrapper.innerHTML = '';
   }
 
-  // fetch channels and render
+  /**
+   * Fetches channel data from the API, renders the channel cards, and handles loading/error states.
+   */
   async function loadChannels() {
     try {
       setStatus('Carregando canais...');
@@ -89,7 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // search
+  /**
+   * Filters the displayed channel cards based on a search term.
+   * @param {string} term - The search term to filter by.
+   */
   function filterCards(term) {
     const cards = Array.from(dadosContainer.querySelectorAll('.card'));
     const t = term.trim().toLowerCase();
